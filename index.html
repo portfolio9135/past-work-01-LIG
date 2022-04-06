@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix=”og: http://ogp.me/ns#”>
+    <meta property="og:url" content=" ページの URL" />
+    <meta property="og:type" content=" ページの種類" />
+    <meta property="og:title" content=" ページの タイトル" />
+    <meta property="og:description" content=" ページの説明文" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:image" content=" サムネイル画像の URL" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 表示領域 -->
+    <meta http-equiv="X-UA-Compatible" content=IE=edge"><!-- バージョン指定 -->
+    <meta name="description" content="⑤LIGの学習用実装サイトです。">
+
+    <link rel="stylesheet" href="css/style.css"> <!-- css -->
+    <link rel="stylesheet" href="css/lightbox.min.css"> <!-- lightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> <!-- bx-slider -->
+
+    <title>⑤LIGの実装 sp</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header-inner-pc">
+            <ul class="header-icon">
+                <li><a href="#"><img src="img/header-icon-f.png" alt="フェイスブックのアイコン"></a></li>
+                <li><a href="#"><img src="img/header-icon-t.png" alt="ツィッターのアイコン"></a></li>
+                <li><a href="#"><img src="img/header-icon-m.png" alt="メールのアイコン"></a></li>
+            </ul><!-- /.header-icon -->
+            <div class="header-main">
+                <h1 class="header-logo"><a href="#">LIG<span>INC.</span> </a></h1><!-- /.header-logo -->
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li><a href="#">WEB</a></li>
+                        <li><a href="#">LIFE</a></li>
+                        <li><a href="#">キャリア</a></li>
+                        <li><a href="#">旅</a></li>
+                        <li><a href="#">マーケティング</a></li>
+                        <li><a href="#">DevRel</a></li>
+                        <li><a href="#">英語</a></li>
+                    </ul><!-- /.header-list -->
+                </nav><!-- /.header-nav -->
+            </div><!-- /.header-main -->
+        </div><!-- /.header-inner-pc -->
+
+        <div class="header-inner-sp">
+            <div class="header-main">
+                <h1 class="header-logo"><a href="#">LIG<span>INC.</span> </a></h1><!-- /.header-logo -->
+
+                <!-- ここからハンバーガーメニュー -->
+                <div class="hamburger">
+                    <input id="input" type="checkbox" class="unshown"><!-- /.unshown -->
+                    <label class="open" for="input"><span></span></label>
+                    <label id="close" for="input" class="unshown"></label><!-- /.unshown -->
+                    <div class="h-content">
+                        <nav class="header-nav">
+                            <ul class="header-list">
+                                <li><a href="#">WEB</a></li>
+                                <li><a href="#">LIFE</a></li>
+                                <li><a href="#">キャリア</a></li>
+                                <li><a href="#">旅</a></li>
+                                <li><a href="#">マーケティング</a></li>
+                                <li><a href="#">DevRel</a></li>
+                                <li><a href="#">英語</a></li>
+                            </ul><!-- /.header-list -->
+                            <ul class="header-icon">
+                                <li><a href="#"><img src="img/header-icon-f.png" alt="フェイスブックのアイコン"></a></li>
+                                <li><a href="#"><img src="img/header-icon-t.png" alt="ツィッターのアイコン"></a></li>
+                                <li><a href="#"><img src="img/header-icon-m.png" alt="メールのアイコン"></a></li>
+                            </ul><!-- /.header-icon -->
+                        </nav><!-- /.header-nav -->
+                    </div><!-- /.h-content -->
+                </div><!-- /.hamburger -->
+                <!-- ここまでハンバーガーメニュー -->
+
+            </div><!-- /.header-main -->
+        </div><!-- /.header-inner-sp -->
+
+    </header><!-- /.header -->
+
+    <section class="mv">
+        <div class="mv-inner">
+            <ul class="bxslider">
+                <li><img src="img/mv-photo.jpg" alt=""></li>
+                <li><img src="img/img01.jpg" alt=""></li>
+                <li><img src="img/img02.jpg" alt=""></li>
+                <li><img src="img/img03.jpg" alt=""></li>
+            </ul><!-- /.bxslider -->
+        </div><!-- /.mv-inner -->
+    </section><!-- /.mv -->
+
+    <section class="content-pc">
+        <div class="content-pc-inner">
+
+            <section class="article">
+                <ul class="article-list">
+                    <li>
+                        <section class="article-photo">
+                            <img src="img/article-photo01.png" alt="記事写真01">
+                        </section><!-- /.article-photo -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">WEB</p><!-- /.article-category -->
+                            </dt><!-- /.article-info -->
+                            <dd class="article-txt">
+                                フォントを擬人化して、そのデ<br>
+                                ザインがもつ雰囲気を再発見し<br>
+                                てみた（欧文編）<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo">
+                            <img src="img/article-photo02.jpg" alt="記事写真02">
+                        </div><!-- /.article-photo -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">LIFE</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                プレゼントにも最適！デザイン<br>
+                                が秀逸な焼酎ボトルコレクショ<br>
+                                ン<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo">
+                            <img src="img/article-photo03.png" alt="記事写真03">
+                        </div><!-- /.article-photo -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">漫画</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                『このマンガがすごい！<br>
+                                2016』に入っててほしい漫画<br>
+                                超個人的5選<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                </ul><!-- /.article-list -->
+            </section><!-- /.article -->
+
+            <section class="aside">
+
+                <section class="aside-lightbox-pc">
+                    <div class="aside-photo"><a href="img/aside-photo-lightbox.jpg" rel="lightbox"><img
+                                src="img/aside-photo.jpg" alt=""></a></div><!-- /.aside-photo -->
+                </section><!-- /.aside-lightbox -->
+
+                <section class="aside-lightbox">
+                    <div class="aside-photo"><a href="img/aside-photo-lightbox.jpg" rel="lightbox"><img
+                                src="img/aside-photo.jpg" alt=""></a></div><!-- /.aside-photo -->
+                </section><!-- /.aside-lightbox -->
+
+                <!-- ここからプルダウンメニュー -->
+                <section class="aside-list-pc">
+                    <nav>
+                        <ul class="aside-pul">
+                            <li class="aside-ttl">カテゴリ一覧</li><!-- /.aside-ttl -->
+                            <li class="aside-txt"><a href="#">すべて</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-txt"><a href="#">殿堂入り</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-txt"><a href="#">おもしろ</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-txt"><a href="#">web制作</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-txt"><a href="#">ライフスタイル</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="aside-txt"><a href="#">ニュース</a>
+                                <ul>
+                                    <li><a href="#">A</a>
+                                        <ul>
+                                            <li><a href="#">A-A</a></li>
+                                            <li><a href="#">A-B</a></li>
+                                            <li><a href="#">A-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">B</a>
+                                        <ul>
+                                            <li><a href="#">B-A</a></li>
+                                            <li><a href="#">B-B</a></li>
+                                            <li><a href="#">B-C</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">C</a>
+                                        <ul>
+                                            <li><a href="#">C-A</a></li>
+                                            <li><a href="#">C-B</a></li>
+                                            <li><a href="#">C-C</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </section><!-- /.aside-list -->
+                <!-- ここまでプルダウンメニュー -->
+
+                <section class="aside-list">
+                    <ul>
+                        <li class="aside-ttl">カテゴリ一覧</li><!-- /.aside-ttl -->
+                        <li class="aside-txt"><a href="#">すべて</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">殿堂入り</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">おもしろ</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">web制作</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">ライフスタイル</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">ニュース</a></li><!-- /.aside-txt -->
+                    </ul>
+                </section><!-- /.aside-list -->
+
+            </section><!-- /.aside -->
+
+            <section class="jq">
+                <p id="pagetop"><a href="#">↑<span class="br">pagetop</span></a></p><!-- /#pagetop -->
+            </section><!-- /.jq -->
+
+        </div><!-- /.content-pc-inner -->
+    </section><!-- /.content-pc -->
+
+    <section class="content-tb">
+        <div class="content-tb-inner">
+
+            <section class="article">
+                <ul class="article-list">
+                    <li>
+                        <div class="article-photo01"></div><!-- /.article-photo01 -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">WEB</p><!-- /.article-category -->
+                            </dt><!-- /.article-info -->
+                            <dd class="article-txt">
+                                フォントを擬人化して、そのデ<br>
+                                ザインがもつ雰囲気を再発見し<br>
+                                てみた（欧文編）<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo02"></div><!-- /.article-photo -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">LIFE</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                プレゼントにも最適！デザイン<br>
+                                が秀逸な焼酎ボトルコレクショ<br>
+                                ン<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo03"></div><!-- /.article-photo -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">漫画</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                『このマンガがすごい！<br>
+                                2016』に入っててほしい漫画<br>
+                                超個人的5選<br>
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                </ul><!-- /.article-list -->
+            </section><!-- /.article -->
+
+            <section class="aside">
+                <section class="aside-photo"></section><!-- /.aside-photo -->
+
+                <section class="aside-list">
+                    <ul>
+                        <li class="aside-ttl">カテゴリ一覧</li><!-- /.aside-ttl -->
+                        <li class="aside-txt"><a href="#">すべて</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">殿堂入り</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">おもしろ</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">web制作</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">ライフスタイル</a></li><!-- /.aside-txt -->
+                        <li class="aside-txt"><a href="#">ニュース</a></li><!-- /.aside-txt -->
+                    </ul>
+                </section><!-- /.aside-list -->
+            </section><!-- /.aside -->
+
+        </div><!-- /.content-tb-inner -->
+    </section><!-- /.content-tb -->
+
+    <section class="content-sp">
+        <section class="article">
+            <div class="article-inner">
+                <ul class="article-list">
+                    <li>
+                        <section class="article-photo">
+                            <img src="img/article-photo01.png" alt="記事写真01">
+                        </section><!-- /.article-photo -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">WEB</p><!-- /.article-category -->
+                            </dt><!-- /.article-info -->
+                            <dd class="article-txt">
+                                フォントを擬人化して、そのデ
+                                ザインがもつ雰囲気を再発見し
+                                てみた（欧文編）
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo">
+                            <img src="img/article-photo02.jpg" alt="記事写真02">
+                        </div><!-- /.article-photo -->
+                        <div class="article-announce">
+                            <img src="img/new.png" alt="NEWラベル">
+                        </div><!-- /.article-announce -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">LIFE</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                プレゼントにも最適！デザイン
+                                が秀逸な焼酎ボトルコレクショ
+                                ン
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="article-photo">
+                            <img src="img/article-photo03.png" alt="記事写真03">
+                        </div><!-- /.article-photo -->
+                        <dl>
+                            <dt class="article-info">
+                                <p class="article-icon"><img src="img/article-icon.png" alt="日付横の時計マーク"></p>
+                                <!-- /.article-icon -->
+                                <p class="article-date"> 2016.01.01 FRI </p><!-- /.article-date -->
+                                <p class="article-category">漫画</p><!-- /.article-category -->
+                            </dt><!-- /.article-date -->
+                            <dd class="article-txt">
+                                『このマンガがすごい！
+                                2016』に入っててほしい漫画
+                                超個人的5選
+                            </dd><!-- /.article-txt -->
+                        </dl>
+                    </li>
+                </ul><!-- /.article-list -->
+            </div><!-- /.article-inner -->
+        </section><!-- /.article -->
+
+        <section class="aside">
+            <section class="aside-photo">
+                <img src="img/aside-photo.jpg" alt="">
+            </section><!-- /.aside-photo -->
+
+            <section class="aside-list">
+                <ul>
+                    <li class="aside-ttl">カテゴリ一覧</li><!-- /.aside-ttl -->
+                    <li class="aside-txt"><a href="#">すべて</a></li><!-- /.aside-txt -->
+                    <li class="aside-txt"><a href="#">殿堂入り</a></li><!-- /.aside-txt -->
+                    <li class="aside-txt"><a href="#">おもしろ</a></li><!-- /.aside-txt -->
+                    <li class="aside-txt"><a href="#">web制作</a></li><!-- /.aside-txt -->
+                    <li class="aside-txt"><a href="#">ライフスタイル</a></li><!-- /.aside-txt -->
+                    <li class="aside-txt"><a href="#">ニュース</a></li><!-- /.aside-txt -->
+                </ul>
+            </section><!-- /.aside-list -->
+        </section><!-- /.aside -->
+
+    </section><!-- /.content-sp -->
+
+    <section class="content-btm">
+        <div class="content-btm-arrow"><a href="#"><img src="img/content-arrow.png" alt="上に戻る上矢印アイコン"></a></div>
+        <!-- /.content-btm-arrow -->
+    </section><!-- /.content-btm -->
+
+    <footer class="footer">
+
+        <section class="footer-head">
+            <div class="footer-head-logo"><img src="img/footer-logo.png" alt="フッターロゴ"></div><!-- /.footer-head-logo -->
+            <div class="footer-head-info">
+                <p class="footer-head-tel">株式会社LIG TEL : 03-6240-1253</p><!-- /.footer-head-tel -->
+                <p class="footer-head-address">〒110-0015 東京都台東区東上野2-18-7 共同ビル 10F</p><!-- /.footer-head-address -->
+            </div><!-- /.footer-head-info -->
+        </section><!-- /.footer-head -->
+
+        <section class="footer-center"></section><!-- /.footer-center -->
+
+        <section class="footer-foot">
+            <div class="footer-foot-info">
+                <ul class="footer-foot-list">
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">メディア・広告掲載について</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                </ul><!-- /.footer-foot-list -->
+            </div><!-- /.footer-foot-info -->
+            <p class="footer-foot-copyright">© 2006-2015 LIG INC.</p><!-- /.footer-foot-copyright -->
+        </section><!-- /.footer-foot -->
+
+    </footer><!-- /.footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+        //プルダウンメニュー
+        $(function () {
+            $("ul.aside-pul li").mouseenter(function () {
+                $(this).siblings().find("ul").hide();
+                $(this).children().slideDown(150);
+            });
+            $('html').click(function () {
+                $('ul.aside-pul ul').slideUp(150);
+            });
+        });
+
+        //ページトップへ
+        $('#pagetop').hide();
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#pagetop').fadeIn();
+            } else {
+                $('#pagetop').fadeOut();
+            }
+        });
+        $('#pagetop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 700);
+            return false;
+        });
+
+        //スライダー
+        $(window).on('load', function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+                mode: 'fade',
+                useCSS: false,
+            });
+        });
+    </script>
+</body>
+
+</html>
